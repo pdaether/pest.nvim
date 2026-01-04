@@ -129,10 +129,9 @@ test('user can login', function () {
 
 The plugin defines the following default keybindings:
 
-- `<leader>Pr` - Run all tests
+- `<leader>Pa` - Run all tests
 - `<leader>Pf` - Run current test file
 - `<leader>Pt` - Run test under cursor
-- `<leader>Pa` - Run all tests (alias for `<leader>Pr`)
 - `<leader>Ps` - Run filtered tests (prompts for filter)
 
 ### Customizing Keybindings
@@ -168,7 +167,7 @@ require('which-key').register({
 }, { prefix = "<leader>" })
 ```
 
-This will display "Pest" instead of "+5 keymaps" when you press `<leader>` in normal mode.
+This will display "Pest" instead of "+4 keymaps" when you press `<leader>` in normal mode.
 
 ## Result Window
 
