@@ -7,7 +7,6 @@ A Neovim plugin for running PHP Pest tests directly from your editor with real-t
 - Run individual test files, single tests, all tests, or filtered tests
 - Results display in a dedicated horizontal split buffer
 - Streaming output for real-time feedback
-- Simple, zero-dependency Lua implementation
 
 ## Requirements
 
@@ -72,6 +71,15 @@ The plugin provides four commands for running tests:
 - `:PestRunFile` - Run tests in the current file
 - `:PestRunTest` - Run the test method at the current cursor position
 
+### Keybindings
+
+The plugin defines the following default keybindings:
+
+- `<leader>Pa` - Run all tests
+- `<leader>Pf` - Run current test file
+- `<leader>Pt` - Run test under cursor
+- `<leader>Ps` - Run filtered tests (prompts for filter)
+
 ### Example Usage
 
 Run tests in the current test file:
@@ -125,16 +133,7 @@ test('user can login', function () {
 });
 ```
 
-## Keybindings
-
-The plugin defines the following default keybindings:
-
-- `<leader>Pa` - Run all tests
-- `<leader>Pf` - Run current test file
-- `<leader>Pt` - Run test under cursor
-- `<leader>Ps` - Run filtered tests (prompts for filter)
-
-### Customizing Keybindings
+## Customizing Keybindings
 
 If you prefer different keybindings, you can override the defaults by adding your own mappings after the plugin setup in your Neovim configuration:
 
